@@ -1,0 +1,10 @@
+To deploy the contract:
+
+1 - Go on Remix (https://remix.ethereum.org/)
+2 - Create a file in the contracts directory (give him the name of the token)
+3 - Copy and paste the code
+4 - Compile
+5 - Go on Deploy and run transactions
+6 - Connect the Wallet in Environnement
+7 - Add initial supply and click on Deploy and Verify
+8 - You can now add the token on Metamask, or use the contract functions from Remix
