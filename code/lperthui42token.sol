@@ -19,4 +19,3 @@ contract Lperthui42Token is ERC20, Ownable {
         return msg.sender == owner();
     }
 }
-
