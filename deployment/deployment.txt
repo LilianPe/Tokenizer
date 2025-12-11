@@ -7,4 +7,10 @@ To deploy the contract:
 5 - Go on Deploy and run transactions
 6 - Connect the Wallet in Environnement
 7 - Add initial supply and click on Deploy and Verify
+
+Input Example:
+    initialSupply: 1
+    signers: ["0xd8239b609c74fd6d98e7254ba41f0680c58d9751", "0xe2fa84967ecb35d186864e0347259915121f8693"] (My 2 Wallet adresses)
+    _requiredSignatures: 2
+
 8 - You can now add the token on Metamask, or use the contract functions from Remix

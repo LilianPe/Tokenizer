@@ -1,13 +1,14 @@
-Nom du token: Lperthui42Token
-Symbole du token: LT42
-Decimales: 18
-Herite de l'implementation securise d'openzeppelin
+Infos:
+    - Token Name: Lperthui42Token
+    - Token Symbol: LT42
+    - Decimals: 18
+    - Inheritance: Based on OpenZeppelin’s secure ERC20 implementation
 
-Fonctionnalitees:
-    - Le deployeur devient proprietaire du contract
-    - Mint initial pour le deployeur equivalent a initialSupply
-    - Token ERC20 standard
-    - Verification du proprietaire avec amITheOwner()
+Features:
+    - The deployer becomes the owner of the contract
+    - Initial mint equal to initialSupply is credited to the deployer
+    - Standard ERC20 token functionality
+    - Ownership check available through amITheOwner()
 
-Parametres:
-    - initialSupply: quantite de Tokens crees, credites ensuite sur le compte du deployeur
+Parameters:
+    - initialSupply: Amount of tokens created at deployment and assigned to the deployer
