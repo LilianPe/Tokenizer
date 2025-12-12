@@ -6,7 +6,7 @@ To deploy the contract:
 4 - Compile
 5 - Go on Deploy and run transactions
 6 - Connect the Wallet in Environnement
-7 - Add initial supply and click on Deploy and Verify
+7 - Add parameters and click on Deploy and Verify
 
 Input Example:
     initialSupply: 1
@@ -14,7 +14,12 @@ Input Example:
     _requiredSignatures: 2
 
 8 - You can now add the token on Metamask, or use the contract functions from Remix
-
-
-Constructor ABI encoded for publishing on BscScan Testnet
+9 - Verify the contract on BscScan (https://testnet.bscscan.com):
+    - Go on Verify contract
+    - Input the adresse of the contract, seect single file, the compier version (see in Soidity compiler) and the License type
+    - Now go on Remix, right click on your file, and select Flatten (To avoid openzeppein import error)
+    - Then, copy your flattened file as the contract code on BsdScan
+    - Finally, add the constructor arguments ABI-encoded (You cans use https://abi.hashex.org )
+    - Click on verify and Pubish and its done!
+Input example ABI encoded for publishing on BscScan Testnet
 0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000002000000000000000000000000d8239b609c74fd6d98e7254ba41f0680c58d9751000000000000000000000000e2fa84967ecb35d186864e0347259915121f8693
