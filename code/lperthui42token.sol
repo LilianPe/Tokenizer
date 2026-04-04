@@ -76,5 +76,4 @@ contract Lperthui42Token is ERC20, Ownable {
         MintRequest storage req = mintRequests[id];
         return (req.to, req.amount, req.approvals, req.executed); // Permet de voir l'etat d'une requete
     }
-
 }

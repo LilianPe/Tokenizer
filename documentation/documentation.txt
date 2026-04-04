@@ -5,10 +5,17 @@ Infos:
     - Inheritance: Based on OpenZeppelin’s secure ERC20 implementation
 
 Features:
-    - The deployer becomes the owner of the contract
-    - Initial mint equal to initialSupply is credited to the deployer
-    - Standard ERC20 token functionality
-    - Ownership check available through amITheOwner()
+    - The deployer becomes the owner of the contract.
+    - Initial mint equal to initialSupply is credited to the deployer.
+    - Standard ERC20 token functionality.
+    - Ownership check available through amITheOwner().
+    - Configurable multisignature that allow new mint.
+    - proposeMint(address to, uint256 amount) function allow to ask for a mint of amount [amount] on the wallet [to].
+    - approveMint(uint256 id) function allow to sign the contract with the id [id] (if your wallet is in signers array).
+    - getNumberOfMintRequest() function allow to see the number of mint request.
+    - getMintRequest(id) function allow to see the details of the mint request of id [id]
 
 Parameters:
     - initialSupply: Amount of tokens created at deployment and assigned to the deployer
+    - signers: array of wallet who can sign
+    - _requiredSignatures: number of signatures to complete the mint
